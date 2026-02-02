@@ -7,19 +7,52 @@
 </head>
 <body>
     <h1>TP3 - Les balises</h1>
-    <h2>Exercice 1</h3>
-    <p>Voici une liste des balises de base en HTML</p>
-    <p>La balise p permet de mettre du texte de base.</p>
-    <h1>Les balises h1, h2, h3... sont des balises qui permettent d'ajouter des 
-    titres et sous-titres. H1 est le titre, h2 est un sous-titre, h3 est un sous-titre 2 etc...</h1>
-    <ul>
-        <li>La balise li permet de créer une liste d'élément. Il faut au préalable créer une balise ul pour que cela fonctionne.</li>
-    </ul>
-    <p> On a également des balises associées à d'autres balises pour modifier et ajouter du contenu. Par exemple, <a href="https://fr.wikipedia.org/wiki/Pingouin">la balise href permet de créer un texte avec un hyperlien.</a>
-    <p>Il y a aussi les balises <strong>strong</strong>, <i>i</i> et <u>u</u>, pour mettre respectivement le text en gras, en italique ou en sous-ligné.</p>
-    <p>La balise img alt permet de mettre des images sur notre page</p>
-    <img src="Strawberry.png">
-    <p>Enfin, il existe une multitude de balises pour séquencer le texte de notre page. On retrouve notamment les balises header, body, foot, section, article, aside, nav, figure ou encore menu .</p>
-    <p>De plus, il y a la balise titre qui permet de définir le titre de la page (comme au dessus de notre code, qui a comme titre "TP3 - Les balises")</p>
+        <h2>Exercice 1</h3>
+            <p>Voici une liste des balises de base en HTML</p>
+            <p>La balise p permet de mettre du texte de base.</p>
+            <h1>Les balises h1, h2, h3... sont des balises qui permettent d'ajouter des 
+            titres et sous-titres. H1 est le titre, h2 est un sous-titre, h3 est un sous-titre 2 etc...</h1>
+            <ul>
+                <li>La balise li permet de créer une liste d'élément. Il faut au préalable créer une balise ul pour que cela fonctionne.</li>
+            </ul>
+            <p> On a également des balises associées à d'autres balises pour modifier et ajouter du contenu. Par exemple, <a href="https://fr.wikipedia.org/wiki/Pingouin">la balise href permet de créer un texte avec un hyperlien.</a>
+            <p>Il y a aussi les balises <strong>strong</strong>, <i>i</i> et <u>u</u>, pour mettre respectivement le text en gras, en italique ou en sous-ligné.</p>
+            <p>La balise img alt permet de mettre des images sur notre page</p>
+            <img src="Strawberry.png">
+            <p>Enfin, il existe une multitude de balises pour séquencer le texte de notre page. On retrouve notamment les balises header, body, foot, section, article, aside, nav, figure ou encore menu .</p>
+            <p>De plus, il y a la balise titre qui permet de définir le titre de la page (comme au dessus de notre code, qui a comme titre "TP3 - Les balises")</p>
+        <h2>Exercice 2</h1>
+            <h3>1. Le langage SQL</h3>
+                <BLOCKQUOTE><h4>1.1. Définition </h4></BLOCKQUOTE>
+                    <p>Le langage <strong>SQL</strong>(<strong>S</strong>tructured <strong>Q</strong>uery <strong>L</strong>anguage ou Langage de requêtes structuré) est un langage comprenant à lui seul l’ensemble 
+                    des ordres nécessaires à la création et à la gestion d’une base de données relationnelle. Il a été créé en 1986 et est en fait 
+                    l’aboutissement de plusieurs langages (Sequel en 1977, System/R, …) créés depuis l’apparition du modèle relationnel en 1970 
+                    (le modèle relationnel a été inventé par Mr Codd, un mathématicien de chez IBM). L'utilisation du langage SQL suppose 
+                    obligatoirement que les données aient été définies selon le modèle relationnel au sein d'un SGBDR (Oracle ©, SQLServer, mySQL, 
+                    PostgreSQL…). </p>
+                <blockquote><h4>1.2. Les différentes normes utilisées</h4></blockquote>
+                    <p>Il existe aujourd'hui plusieurs normes relatives à l'utilisation du <strong><u>langage SQL</u></strong>. La différence entre ces deux normes se situe 
+                    principalement dans l'écriture des jointures et dans l'ajout de fonctionnalités. :</p>
+                    <ul style="list-style:none">
+                        <li>-   La norme <strong>SQL 89</strong> qui est encore très utilisée actuellement.</li>
+                        <li>-   La norme <strong>SQL 92</strong>.</li>
+                        <li>-   Aujourd'hui <strong>SQL 2011</strong>.</li>
+                    </ul>
+                    <p>Bien qu'il existe des normes il peut y avoir des différences entre SGBDR dans la syntaxe. Ainsi on peut lire sur le site de <strong><u>PostgreSQL</u></strong>:</p>
+                    <ul>
+                        <li>"Le développement de <FONT size="4pt">PostgreSQL™</FONT> respecte le standard en vigueur, tant que celui-ci ne s'oppose pas aux fonctionnalités 
+                        traditionnelles ou au bon sens…"</li>
+                        <li>"SQL-92 définit trois niveaux de conformité : basique (ENTRY), intermédiaire (INTERMEDIATE) et complète (FULL). La majorité des 
+                        systèmes de gestion de bases de données se prétendaient compatibles au standard SQL dès lors qu'ils se conformaient au niveau 
+                        Entry"</li>
+                    </ul>
+             <h3>2. Le modèle de données utilisé dans le cours</h3>
+                <blockquote><h4>2.1. Le modèle entité-association (ou MCD) d'un établissement hospitalier</h4></blockquote>
+                <blockquote><h4>2.2. Le modèle relationnel (ou MRD) d'un établissement hospitalier</h4></blockquote>
+                <blockquote><h4>2.3. La description textuelle des tables utilisées</h4></blockquote>
+                    <p><mark>fonction_personnel</mark> (code_fonction, libelle_fonction)</p>
+                    <blockquote><p>Clé primaire : code_fonction</p></blockquote>
+                    <p><mark>service</mark> (num_service, libelle_service, capacite_accueil, date_ouverture)</p>
+                    <p>Clé primaire : &emsp;&emsp;&emsp;num_service</p>
 </body>
 </html>
