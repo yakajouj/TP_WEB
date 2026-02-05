@@ -12,13 +12,26 @@
             <p>La balise p permet de mettre du texte de base.</p>
             <h1>Les balises h1, h2, h3... sont des balises qui permettent d'ajouter des 
             titres et sous-titres. H1 est le titre, h2 est un sous-titre, h3 est un sous-titre 2 etc...</h1>
+            <hr>
+            <p>La balise hr fait sauter une ligne au texte.</p>
             <ul>
-                <li>La balise li permet de créer une liste d'élément. Il faut au préalable créer une balise ul pour que cela fonctionne.</li>
+                <li>La balise li permet de créer une liste d'élément. Il faut au préalable créer une balise ul (pour une liste non ordonnée) ou ol (pour une liste ordonnée) afin que cela fonctionne.</li>
             </ul>
-            <p> On a également des balises associées à d'autres balises pour modifier et ajouter du contenu. Par exemple, <a href="https://fr.wikipedia.org/wiki/Pingouin">la balise href permet de créer un texte avec un hyperlien.</a>
-            <p>Il y a aussi les balises <strong>strong</strong>, <i>i</i> et <u>u</u>, pour mettre respectivement le text en gras, en italique ou en sous-ligné.</p>
+            <blockquote>La balise blockquote permet de réaliser une tabulation dans le texte, notamment pour les citations.</blockquote>
+            <p> On a également des balises associées à d'autres balises pour modifier et ajouter du contenu. Par exemple, <a href="https://fr.wikipedia.org/wiki/Pingouin">la balise href permet de créer un texte avec un hyperlien. </a> Elle peut aussi servir à afficher un lien direct vers un numéro de téléphone ou un numéro de téléphone.</p>
+            <p>Il y a aussi les balises <strong>strong</strong>, <i>i</i>, <u>u</u>, <s>s</s> ou encore <mark>mark</mark>, pour mettre respectivement le text en gras, en italique, en sous-ligné, barré ou encore en surligné.</p>
+            <pre>La balise pre permet d'avoir un texte préformaté.</pre>
             <p>La balise img alt permet de mettre des images sur notre page</p>
             <img src="Strawberry.png">
+            <div>La balise table permet d'afficher un tableau avec plusieurs valeurs.</div>
+            <table>
+                <tr>
+                    <td> 1 </td> <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 3 </td> <td> 4 </td>
+                </tr>
+            </table>
             <p>Enfin, il existe une multitude de balises pour séquencer le texte de notre page. On retrouve notamment les balises header, body, foot, section, article, aside, nav, figure ou encore menu .</p>
             <p>De plus, il y a la balise titre qui permet de définir le titre de la page (comme au dessus de notre code, qui a comme titre "TP3 - Les balises")</p>
         <h2>Exercice 2</h1>
@@ -50,16 +63,16 @@
                 <blockquote><h4>2.1. Le modèle entité-association (ou MCD) d'un établissement hospitalier</h4></blockquote>
                 <blockquote><h4>2.2. Le modèle relationnel (ou MRD) d'un établissement hospitalier</h4></blockquote>
                 <blockquote><h4>2.3. La description textuelle des tables utilisées</h4></blockquote>
-                    <p><mark>fonction_personnel</mark> (code_fonction, libelle_fonction)</p>
-                    <blockquote><p>Clé primaire : code_fonction</p></blockquote>
-                    <p><mark>service</mark> (num_service, libelle_service, capacite_accueil, date_ouverture)</p>
-                    <p>Clé primaire : &emsp;&emsp;&emsp;num_service</p>
+                    <PRE><mark>fonction_personnel</mark> (code_fonction, libelle_fonction)</PRE>
+                    <blockquote><PRE>Clé primaire : code_fonction</PRE></blockquote>
+                    <PRE><mark>service</mark> (num_service, libelle_service, capacite_accueil, date_ouverture)</PRE>
+                    <PRE>Clé primaire : &emsp;&emsp;&emsp;num_service</PRE>
         <h2>Exercice 3</h2>
             <h3> <FONT size ="6pt">Yanis KAJOUJ</h3>
             <h3>Étudiant en BTS Services Informatiques aux Organisations (SIO)</FONT> </h3>
                 <ul>
-                    <li>06 56 66 64 55</li>
-                    <li>ya.kajouj@gmail.com</li>
+                    <li><a href="tel:+656666455">+6 56 66 64 55</a></li>
+                    <li><a href="mailto:ya.kajouj@gmail.com?subject=Html5">ya.kajouj@gmail.com</a></li>
                     <li>26000 Valence</li>
                 </ul>
                 <p> Actuellement en première année de BTS SIO, je souhaite réaliser dans le cadre de mes études un stage dans votre organisme. Sérieux et motivé, je saurai être un élément utile à votre activité.</p>
@@ -72,7 +85,7 @@
                     </ul>
                     <p>A travers ce job, j'ai pu notamment acquérir des compétences de communication et d'organisation au sein d'une équipe.</p>
                     <p><strong>VALGRAIN Les Tourettes (6/2024-8/2024)</strong>: Après une bonne saison l'an passé, j'ai pu signer à nouveau un contrat avec Valgrain. Le travail et les missions étaient sensiblement les mêmes.</p>
-                    <p><strong>VALGRAIN Les Tourettes(6/2025-8/2025)</strong>: Pour une troisième années consécutives j'ai pu rejoindre les rangs de Valgrain. Cette année était différente, avec une organisation de 2 membres par équipes. Cela à mener à revoir un</p>
+                    <p><strong>VALGRAIN Les Tourettes(6/2025-8/2025)</strong>: Pour une troisième années consécutives j'ai pu rejoindre les rangs de Valgrain. Cette année était différente, avec une organisation de 2 membres par équipes. Cela à mener à revoir notre organisation au sein des groupes.</p>
                 <h4> <FONT size="5pt">Parcours scolaire</FONT></h4>
                     <p><strong>2021-2023</strong> - Baccalauréat général mention bien au Lycée Xavier Mallet</p>
                     <p><strong>2023-2025</strong> - Licence Langue Étrangère Appliquée Anglais-Japonais à l'Université Grenoble Alpes</p>
