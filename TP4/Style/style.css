@@ -1,13 +1,10 @@
-.boutonaccueil {
-    
-}
-
 .imagecentre {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 0 auto;
+    
 }
 
 img {
@@ -38,4 +35,17 @@ h1 {
 
 p, li {
     font-family: "Roboto";
+}
+
+h2 {
+    line-height: 1.1;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+.imgpresentation {
+    height: 144px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
