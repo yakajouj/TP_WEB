@@ -20,7 +20,7 @@ p, li {
 .table1 {
     border-collapse: collapse; 
     border: 1px solid rgb(80, 78, 78);
-    width: 80%;
+    width: 60%;
     table-layout: fixed;
 }
 
@@ -50,7 +50,7 @@ p, li {
 .table2 {
     font-family: "Roboto";
     border-collapse: collapse;
-    width: 80%;
+    width: 60%;
 }
 
 .table2 th, .table2 td {
@@ -67,7 +67,7 @@ p, li {
 .table3 {
     font-family: "Roboto";
     border-collapse: collapse;
-    width: 80%;
+    width: 60%;
 }
 
 .table3 th, .table3 td, .table3 caption {
