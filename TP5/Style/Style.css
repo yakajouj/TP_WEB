@@ -63,3 +63,36 @@ p, li {
 .table2 img {
     height: auto;
 }
+
+.table3 {
+    font-family: "Roboto";
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.table3 th, .table3 td, .table3 caption {
+    font-family: "Roboto";
+    padding: 5px; 
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.table3_jaune {
+   background-color: rgb(247, 221, 94);
+}
+
+.table3_rose {
+    background-color: rgb(251, 155, 143);
+}
+
+.table3_rosef {
+    background-color: rgb(255, 103, 83);
+}
+
+.table3_jaunef {
+   background-color: rgb(250, 208, 0);
+}
+
+.table3_gris {
+    background-color: rgb(216, 216, 216);
+}
