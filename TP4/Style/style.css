@@ -30,7 +30,7 @@ img {
 h1 {
     text-align: center;
     font-family: "Roboto";
-    font-size: 42px;
+    font-size: 48px;
 }
 
 p, li {
@@ -40,7 +40,14 @@ p, li {
 h2 {
     line-height: 1.1;
     font-family: "Roboto";
-    font-size: 30px;
+    font-size: 38px;
+    text-decoration: underline;
+}
+
+h3 {
+    line-height: 1.1;
+    font-family: "Roboto";
+    font-size: 28px;
 }
 .imgpresentation {
     height: 144px;
@@ -48,4 +55,74 @@ h2 {
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+@font-face {
+    font-family: "Courier Prime";
+    src: url("../Fonts/CourierPrime-Regular.ttf") format("truetype");
+}
+
+.prog {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    padding:7px;
+    line-height: 0.7;
+}
+
+.prog p {
+    font-family: "Courier Prime";
+}
+
+.vert {
+    color: green;
+}
+
+.bleu {
+    color: blue;
+}
+
+.violet {
+    color: purple;
+}
+
+.rouge {
+    color: red;
+}
+
+.gras {
+    font-weight: bold;
+}
+.grass {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.orange {
+    color: orange
+}
+
+table {
+    border-collapse: collapse; 
+    width: 30%; 
+}
+
+td {
+    font-family: "Roboto";       
+    border: 1px solid black;
+    padding: 5px; 
+    text-align: center; 
+}
+
+.sommaire {
+    max-width: 1280px; 
+    margin: 0 auto; 
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #a19a9a;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid black;
+
 }
