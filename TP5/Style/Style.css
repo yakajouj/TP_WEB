@@ -68,6 +68,7 @@ p, li {
     font-family: "Roboto";
     border-collapse: collapse;
     width: 60%;
+    table-layout: fixed;
 }
 
 .table3 th, .table3 td, .table3 caption {
