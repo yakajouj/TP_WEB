@@ -11,7 +11,7 @@
         <br>
         <a href="../Cours_JS.html" title="Revenir au portail JS"><img src="../../../Image/BoutonRetour.png"></a>
         <h1>LANGAGE JAVASCRIPT : LES BASES DU LANGAGES</h1>
-        <h2>Table des matières</h2>
+        <h2 id="Table des matières">Table des matières</h2>
         <div class="sommaire">
         <ol>
             <li><a href="#LA STRUCTURE DE BASE D'UN PROGRAMME EN JAVASCRIPT">LA STRUCTURE DE BASE D'UN PROGRAMME EN JAVASCRIPT</li></a>
@@ -24,7 +24,16 @@
                 <li><a href="#MEMOIRE VIVE">MEMOIRE VIVE</li></a>
                 <li><a href="#CHOIX DU NOM">CHOIX DU NOM</li></a>
                 <li><a href="#DECLARATION DE VARIABLES ET CONSTANTES">DECLARATION DE VARIABLES ET CONSTANTES</li></a>
+                <li><a href="#LES DIFFERENTS TYPE ET LEUR PLAGE DE LA VALEUR">LES DIFFERENTS TYPE ET LEUR PLAGE DE LA VALEUR</li></a>
+                <li><a href="#DETAILS SUR LES DIFFERENTS TYPES">DETAILS SUR LES DIFFERENTS TYPES</li></a>
             </ul>
+            <li><a href="#LES OPÉRATEURS">LES OPÉRATEURS</li></a>
+            <ul>
+                <li><a href="#LES OPÉRATEURS ARITHMÉTIQUES">LES OPÉRATEURS ARITHMÉTIQUES</li></a>
+                <li><a href="#LES OPÉRATEURS LOGIQUES">LES OPÉRATEURS LOGIQUES</li></a>
+                <li><a href="#LES OPÉRATEURS D'AFFECTATION ET D'INCRÉMENTATION">LES OPÉRATEURS D'AFFECTATION ET D'INCRÉMENTATION</li></a>
+            </ul>
+            <li><a href="#LES FONCTIONS D'ENTRÉE/SORTIE">LES FONCTIONS D'ENTRÉE/SORTIE</li></a>
         </div>
         </ol>
         <h2 id="LA STRUCTURE DE BASE D'UN PROGRAMME EN JAVASCRIPT">LA STRUCTURE DE BASE D'UN PROGRAMME EN JAVASCRIPT</h2>
@@ -172,7 +181,7 @@
                 <p>&nbsp;&nbsp;<span class="bleu">var </span><span class="violet">g</span>=<span class="orange">"Bonjour"&nbsp;&nbsp;&nbsp;&nbsp;<span class="vert">//f est une String</span></span>;</p>
                 <p class="bleu">&lt;/script&gt;</p>
             </div>
-        <h3>LES DIFFERENTS TYPE ET LEUR PLAGE DE LA VALEUR</h3>
+        <h3 id="LES DIFFERENTS TYPE ET LEUR PLAGE DE LA VALEUR">LES DIFFERENTS TYPE ET LEUR PLAGE DE LA VALEUR</h3>
             <p>Tableau récapitulatif :</p>
             <table>
                 <tr>
@@ -197,12 +206,12 @@
                     <td><code>undefined</code></td> <td>?</td> <td>?</td> <td>Une valeur possible : undefined</td>
                 </tr>
             </table>
-        <h3>DETAILS SUR LES DIFFERENTS TYPES</h3>
+        <h3 id="DETAILS SUR LES DIFFERENTS TYPES">DETAILS SUR LES DIFFERENTS TYPES</h3>
             <ul>
                 <li><b>Number</b> : représente soit un entier, ou bien un réel (nombre à virgule). Ce type de données peuvent recevoir des valeurs négatives. Dans ce cas-là on précède la valeur d'un (-). Pour une valeur positive il est possible, mais inutile, d'ajouter le signe (+) devant la valeur.</li>
-                <p>Exemple :</p>
+                <p><u>Exemples</u> :</p> 
                 <div class="prog">
-                    <p>let a=+10; //Les 2 déclarations sont équivalentes</p>
+                    <p>let a=+10; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Les 2 déclarations sont équivalentes</p>
                     <p>let a=10;</p>
                 </div>
                 <p>Si Number est un entier sa plage de valeur est comprise entre -(2^53 -1) et 2^53 -1, soit entre -9007199254740991 et +9007199254740991. Passé cette plage JavaScript ne garantit plus la cohérence des calculs, et il y aura des incohérences. Pour comprendre ce phénomène il est important de comprendre la différence entre la représentation des nombres en mathématique et en informatique.</p>
@@ -214,29 +223,29 @@
                 <p>La représentation est donc celle d'un cercle.</p>
                 <p>Ainsi le calcul suivant donne un résultat faux :</p>
                 <div class="prog">
-                    <p>let a=2**53-1;  //ici a vaut 9007199254740991</p>
-                    <p>a=a+20;	    // en théorie a vaut maintenant 9 007 199 254 741 011</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// en réalité cela donne 9007199254741012</p>
+                    <p>let a=2**53-1;  &nbsp;&nbsp;&nbsp;&nbsp;//ici a vaut 9007199254740991</p>
+                    <p>a=a+20; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// en théorie a vaut maintenant 9 007 199 254 741 011</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// en réalité cela donne 9007199254741012</p>
                 </div>
                 <p>Avec une erreur de 1 répété beaucoup de fois on peut arriver à de grosses erreurs.</p>
                 <br>
                 <p>Si Number est un réel sa plage de valeurs est comprise entre 5e-324  et 1.7976931348623157e+308. Passé cette plage JavaScript propose 2 valeurs pour représenter +∞ à -∞. </p>
-                <p>Exemple :</p>
+                <p><u>Exemples</u> :</p>
                 <div class="prog">
-                    <p>let a=(2**2000);</p>
-                    <p>let b=-(2**2000);</p>
-                    <p>Ici (a) vaut Infinity. Et (b) -Infinity</p>
+                    <p>let a=(2**2000); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Ici (a) vaut Infinity</p>
+                    <p>let b=-(2**2000); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Et (b) -Infinity</p>
+                    <p></p>
                 </div>
                 <br>
                 <br>
-                <li>Le BigInt : ce type permet de représenter des entiers quand la plage des entiers sur Number est dépassée. Il faut pour cela préfixé chaque valeur d'un petit n.</li>
+                <li><b>Le BigInt</b> : ce type permet de représenter des entiers quand la plage des entiers sur Number est dépassée. Il faut pour cela préfixé chaque valeur d'un petit n.</li>
                 <div class="prog">
-                    <p>let a=2n**53n-1n;  //ici a vaut 9007199254740991</p>
-                    <p>a=a+20n;	    // a vaut  9 007 199 254 741 011</p>
+                    <p>let a=2n**53n-1n;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//ici a vaut 9007199254740991</p>
+                    <p>a=a+20n;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// a vaut  9 007 199 254 741 011</p>
                 </div>
                 <br>
                 <br>
-                <li>Le String: permet la représentation de chaine de caractères mais aussi de simple caractère. Le langage JavaScript autorise indifféremment l'usage des doubles cotes (") ou simple cote (').</li>
+                <li><b>Le String</b>: permet la représentation de chaine de caractères mais aussi de simple caractère. Le langage JavaScript autorise indifféremment l'usage des doubles cotes (") ou simple cote (').</li>
                 <div class="prog">
                     <p>let a="coucou";</p>
                     <p>let b='coucou';</p>
@@ -278,9 +287,9 @@
                 <br>
                 <br>
             </ul>
-    <h2>LES OPÉRATEURS</h2>
+    <h2 id="LES OPÉRATEURS">LES OPÉRATEURS</h2>
         <p>Il y a 3 grandes catégories d'opérateurs.</p>
-        <h3>LES OPÉRATEURS ARITHMÉTIQUES</h3>
+        <h3 id="LES OPÉRATEURS ARITHMÉTIQUES">LES OPÉRATEURS ARITHMÉTIQUES</h3>
             <p>Il existe une certaine priorité des opérateurs, comme en mathématique. Pour s'éviter tous problèmes avec ces priorités il suffit de mettre des parenthèses.</p>
             <table>
                 <tr>
@@ -306,13 +315,13 @@
                 </tr>
             </table>
             <p>Le langage JavaScript a la particularité de toujours chercher à retourner quelque chose même quand le calcul n'a pas de logique. Il faut donc faire très attention !!</p>
-            <p>Quelques exemples :</p>
+            <p><u>Quelques exemples</u> :</p>
             <div class="prog">
-                <p>let a=3,b=5,c=a+b;          //  c vaut 8 normal</p>
-                <p>let a=3,b=50.5,c=a+b;       //  c vaut 53.5</p>
-                <p>let a=true,b=50.5,c=a+b;    //  c vaut ?</p>
-                <p>let a=true,b=true,c=a+b;    //  c vaut ?</p>
-                <p>let a=5,b="test",c=a+b;     //  c vaut ?</p>
+                <p>let a=3,b=5,c=a+b;         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//  c vaut 8 normal</p>
+                <p>let a=3,b=50.5,c=a+b; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //  c vaut 53.5</p>
+                <p>let a=true,b=50.5,c=a+b;    &nbsp;&nbsp;&nbsp;&nbsp;//  c vaut ?</p>
+                <p>let a=true,b=true,c=a+b; &nbsp;&nbsp;&nbsp;&nbsp;//  c vaut ?</p>
+                <p>let a=5,b="test",c=a+b; &nbsp;&nbsp;&nbsp;&nbsp; // c vaut ?</p>
             </div>
             <p>Quand une opération n'est vraiment pas possible JavaScript retourne en générale une valeur NaN qui signifie Not A Number.</p>
             <p>Dans l'exemple qui suit on cherche à diviser un Number par un String ce qui n'a pas de sens. Le résultat est ici NaN</p>
@@ -323,22 +332,22 @@
             <p><u>Cas particulier de la division d'entier :</u></p>
             <p>Dans de nombreux cas nous avons besoin de récupérer un résultat de type Entier. Le code suivant ne permet d'obtenir le quotient 2 pour cette opération, mais 2.5. Plusieurs solutions existent pour obtenir le résultat voulu notamment la fonction pareInt.</p>
             <div class="prog">
-                <p>let a=5,b=2,c=a/b;    		// sans parseInt c vaut 2.5</p>
-                <p>document.write(parseInt(c));	// avec parseInt c vaut 2</p>
+                <p>let a=5,b=2,c=a/b; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// sans parseInt c vaut 2.5</p>
+                <p>document.write(parseInt(c)); &nbsp;&nbsp;&nbsp;// avec parseInt c vaut 2</p>
             </div>
             <br>
             <p>Pour obtenir le reste de la division on utilisera l'opérateur %.  Avec JavaScript % marche aussi sur les nombres reels. Encore une souplesse qui n'existe pas d'autre langage. A éviter !! </p>
             <div class="prog">
-                <p>let a=5,b=2,c=a%b;    		// c vaut 1    </p>
+                <p>let a=5,b=2,c=a%b; &nbsp;&nbsp;&nbsp;&nbsp;// c vaut 1    </p>
             </div>
             <p>Comme vous l'avez appris en math il ne faut jamais diviser par 0. Dans de nombreux langage ce genre d'opérations fait planter le programme par le mécanisme d'exception comme en Java par exemple. Et bien ce n'est pas le cas en JavaScript. Il existe même en JavaScript la valeur -0. Comme nous l'avons déjà dit, JavaScript cherchera toujours à retourner un résultat.</p>
             <div class="prog">
-                <p>let a=5.5,b=0,c=a/b;  		// une division par zéro : ici c vaut infinity  </p> 
-                <p>let a=5.5,b=-0,c=a/b;  	// une division par - zéro : ici c vaut  -infinity</p>
+                <p>let a=5.5,b=0,c=a/b;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// une division par zéro : ici c vaut infinity  </p> 
+                <p>let a=5.5,b=-0,c=a/b;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// une division par - zéro : ici c vaut  -infinity</p>
             </div>
             <p>Les principes énoncés ci-dessus sont les même pour les autres opérateurs.</p>
             <p>Attention pour l'opérateur ** (puissance). JavaScript possède également un opérateur binaire ^ (XOR logique). ** et ^ sont deux opérateurs bien différents. Par exemple 2 ** 3 === 8 et 2 ^ 3 === 1.</p>
-        <h3>LES OPÉRATEURS LOGIQUES</h3>
+        <h3 id="LES OPÉRATEURS LOGIQUES">LES OPÉRATEURS LOGIQUES</h3>
             <p>Ce type d'opérateur dans les tests des conditions (if, else if) ou des boucles (for, while, do while). Le résultat d'une opération logique est une valeur booléenne (true ou false)</p>
             <table>
                 <tr>
@@ -372,14 +381,14 @@
                     <td>>=</td> <td>Supérieur ou égal à</td>
                 </tr>
             </table>
-            <p>Exemple :</p>
+            <p><u>Exemples</u> :</p>
             <div class="prog">
                 <p>let i=4,j=3 ;</p>
                 <p>let v ;</p>
-                <p>v=(i<=j) ;              // v vaut : false</p>
-                <p>v=(i==4 && i > 2);      // v vaut ? </p>
+                <p>v=(i<=j) ; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // v vaut : false</p>
+                <p>v=(i==4 && i > 2); &nbsp;&nbsp;&nbsp;&nbsp;// v vaut ? </p>
             </div>
-        <h3>LES OPÉRATEURS D'AFFECTATION ET D'INCRÉMENTATION</h3>
+        <h3 id="LES OPÉRATEURS D'AFFECTATION ET D'INCRÉMENTATION">LES OPÉRATEURS D'AFFECTATION ET D'INCRÉMENTATION</h3>
         <table>
             <tr>
                 <td>Opérateur</td> <td>Signification</td>
@@ -424,66 +433,46 @@
         <p><u>Quelques exemples simples :</u></p>
         <div class="prog">
             <p>let i=3;</p>
-            <p>i++ ;   // i=i+1 ;</p>
-            <p>i-- ;   // i=i-1 ; </p>
-            <p>i+=1 ;  //i=i+1 ;</p>
-            <p>i*=5 ;  //i=i*5 ;</p>
+            <p>i++ ;   &nbsp;&nbsp;&nbsp;&nbsp;// i=i+1 ;</p>
+            <p>i-- ;   &nbsp;&nbsp;&nbsp;&nbsp;// i=i-1 ; </p>
+            <p>i+=1 ;  &nbsp;&nbsp;&nbsp;//i=i+1 ;</p>
+            <p>i*=5 ; &nbsp;&nbsp; //i=i*5 ;</p>
         </div>
-        <p>Attention, certains opérateurs sont dits à effet de bord, et s'ils sont mal utilisé (ou mal maitrisé) peuvent donner des résultats inattendus. Exemple</p>
+        <br>
+        <p><u>Attention</u>, certains opérateurs sont dits à effet de bord, et s'ils sont mal utilisé (ou mal maitrisé) peuvent donner des résultats inattendus. Exemple</p>
         <div class="prog">
             <p>let a=5,b=1,c=0;</p>
-            <p>c=++b + a++;   //c vaut ?</p>
+            <p>c=++b + a++;  &nbsp;&nbsp;&nbsp; //c vaut ?</p>
             <br>
             <p>let a=5,b=1,c=0;</p>
-            <p>c=b++ + a++;   //c vaut ?</p>
+            <p>c=b++ + a++;   &nbsp;&nbsp;&nbsp;&nbsp;//c vaut ?</p>
         </div>
-        <p>Conseils : Programmez au début en utilisant une façon simple d"incrémenter et d"affecter.</p>
+        <p><u>Conseils</u> : Programmez au début en utilisant une façon simple d"incrémenter et d"affecter.</p>
         <br>
-        <p>L'affectation conditionnelle : </p>
-        <p>Syntaxe : <opérande> = <condition> ?<expression1> :<expression2> ;</p>
+        <p><u>L'affectation conditionnelle</u> : </p>
+        <p>Syntaxe : <b>&lt;opérande&gt; = &lt;condition&gt; ?&lt;expression1&gt; :&lt;expression2&gt; ;</b></p>
         <p>Si condition vaut true alors on affecte à opérande expression1, si false expresson2.</p>
         <p><u>Exemple</u> :</p>
         <div class="prog">
             <p>let i=3,j=4,k ;</p>
             <p>k= i>j ?10 :-10 ;</p>
         </div>
-        <h2>LES FONCTIONS D'ENTRÉE/SORTIE</h2>
+        <h2 id="LES FONCTIONS D'ENTRÉE/SORTIE">LES FONCTIONS D'ENTRÉE/SORTIE</h2>
             <p>Les fonctions d'entrée-sortie permettent de "dialoguer" avec un périphérique d'entrée (bien souvent un clavier) et un périphérique de sortie (bien souvent un écran). </p>
             <p>Dans un environnement Web, pour commencer simplement nous utiliserons 3 fonctions :</p>
             <ul>
                 <li>Alert ou plutôt window.alert(message);</li>
                 <li>resultat = window.confirm(message);</li>
-                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message est la chaîne contenant le texte à afficher dans le dialogue.</li>
-                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultat est une valeur booléenne indiquant si OK ou Annuler a été sélectionné (true signifie OK).</li>
+                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>message</b> est la chaîne contenant le texte à afficher dans le dialogue.</li>
+                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>resultat</b> est une valeur booléenne indiquant si OK ou Annuler a été sélectionné (true signifie OK).</li>
                 <li>resultat = window.prompt(message, defaut);</li>
-                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resultat est une valeur booléenne indiquant si OK ou Annuler a été sélectionné (true signifie OK).</li>
-                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaut : Une chaîne de caractères contenant la valeur par défaut affichée pour la saisie</li>
-                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;résultat : La chaîne de caractères qui a été saisie par l'utilisateur ou null --> </li>
+                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>message</b> Une chaîne de caractères qui sera affichée pour l'utilisateur.</li>
+                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>defaut</b> : Une chaîne de caractères contenant la valeur par défaut affichée pour la saisie</li>
+                <li style="list-style-type: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>résultat</b> : La chaîne de caractères qui a été saisie par l'utilisateur ou null --> </li>
             </ul>
             <br>
+            <a href="#Table des matières"><p>Pour revenir à la table des matières</p></a>
             <p>Si vous avez des questions, n'hésitez pas à envoyer un mail par <a href="mailto:ya.kajouj@gmail.com?subject=JS - Cours 1">ici</a> !</p>
-            <p><a href="JS_Cours_1PDF.pdf" download>Pour télécharger le cours et y accéder hors-ligne, cliquer ici !</a></p>
+            <p>Pour télécharger le cours et y accéder hors-ligne, cliquer <a href="JS_Cours_1PDF.pdf" download> ici !</a></p>
 </body>
 </html>
-
-
-
-<!-- 
-
-
-
-
-
-
-
-
-
-Exemple :  
-
-
-•	
-•	
- 		
-•	
-message Une chaîne de caractères qui sera affichée pour l'utilisateur
-
