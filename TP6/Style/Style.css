@@ -1,0 +1,27 @@
+html, body {
+    text-align: center;
+    
+}
+.bordure {
+    display:flex;
+    align-items: center;
+    
+}
+.affichage img {
+    opacity: 0;
+    
+}
+
+.affichage {
+    border: solid 1px rgb(245, 84, 223);    background-color: pink;
+}
+
+.affichage:hover {
+    background-color: rgb(255, 56, 139);
+    cursor: pointer;
+}
+
+.affichage img:active {
+    opacity: 100%;
+    background-color: white;
+}
