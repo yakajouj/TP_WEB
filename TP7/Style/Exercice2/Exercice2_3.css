@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    position: absolute;
+    width: 100vw;
+}
+.gauche {
+    height: 90vh;
+    width: 50vw;
+    background-color: rgb(8, 132, 39);
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.droite {
+    width: 50vw;
+    height: 90vh;
+    float: right;
+    position: relative;
+    background-color: rgb(121, 29, 138);
+}
+
+footer {
+    width: 100vh;
+    height: 10vh;
+    background-color: rgb(238, 207, 8);
+}
