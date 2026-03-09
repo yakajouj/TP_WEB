@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #6715c5b0;
+    line-height: 10vh;
+    text-align: center;
+}
+
+.menu {
+    height: 5vh;
+    width: 100%;
+    background-color: #3125e0;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.milieu {
+    width: 100vw;
+    height: 75vh;
+    background-color: pink;
+    padding-top: 3vh;
+    padding-left: 3vh;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #5a5c5c;
+    position: relative; 
+    line-height: 10vh;
+    text-align: center;
+} 
+
+.caserouge {
+    border: solid 1px rgb(252, 252, 252);
+    background-color: pink;
+    width: 24.55%;
+    height: 24%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+    line-height: 18vh;
+    text-align: center;
+}
+
+.caseorange{
+    border: solid 1px rgb(252, 252, 252);
+    background-color: pink;
+    width: 24.55%;
+    height: 24%;
+    background-color: orange;
+    display: inline-block;
+    text-align: center;
+    line-height: 18vh;
+    text-align: center;
+}
+
+.casemarron {
+    border: solid 1px rgb(252, 252, 252);
+    background-color: pink;
+    width: 24.55%;
+    height: 24%;
+    background-color: rgb(155, 88, 0);
+    display: inline-block;
+    text-align: center;
+    line-height: 18vh;
+    text-align: center;
+    
+}
+
+.caseverte {
+    border: solid 1px rgb(252, 252, 252);
+    background-color: pink;
+    width: 24.55%;
+    height: 24%;
+    background-color: rgb(58, 128, 0);
+    display: inline-block;
+    text-align: center;
+    line-height: 18vh;
+    text-align: center;
+}
