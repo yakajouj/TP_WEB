@@ -1,25 +1,32 @@
-html,body{
- width: 99%;
- height: 100%;
-align-items: center;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.globale {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .bordure {
     display: flex;
-    width:100%;
+}
+
+.affichage {
+    border: solid 1px rgb(245, 84, 223);
+    background-color: pink;
 }
 
 .affichage img {
     opacity: 0;
-    width: 11vw;
+    width: 15vw;
     height: auto;
-}
-
-.affichage {
-    border: solid 1px rgb(245, 84, 223);    background-color: pink;
-    width: 100%;
-    width:fit-content;
-    
 }
 
 .affichage:hover {
@@ -27,11 +34,7 @@ align-items: center;
     cursor: pointer;
 }
 
-.affichage img:active {
-    opacity: 100%;
-    background-color: white;
-}
-
-.globale {
-    
+.affichage:active img {
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
 }
