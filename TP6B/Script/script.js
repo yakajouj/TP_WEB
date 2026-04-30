@@ -33,7 +33,7 @@ imageControle.forEach(function (element) {
         const id = parseInt(element.id);
         const nomImage = tableauImage[id];
 
-        element.innerHTML = "<img src='../Assets/Image/" + nomImage + "' alt=''>";
+        element.innerHTML = "<img src='Assets/Image/" + nomImage + "' alt=''>";
         element.classList.remove("affichage");
         element.classList.add("imgclique");
 
@@ -82,9 +82,9 @@ function verification() {
 
         setTimeout(function () {
             document.getElementById(id1).classList.replace("imgclique", "affichage");
-            document.getElementById(id1).innerHTML = "<img src='../Assets/Image/img0.png' alt=''>";
+            document.getElementById(id1).innerHTML = "<img src='Assets/Image/img0.png' alt=''>";
             document.getElementById(id2).classList.replace("imgclique", "affichage");
-            document.getElementById(id2).innerHTML = "<img src='../Assets/Image/img0.png' alt=''>";
+            document.getElementById(id2).innerHTML = "<img src='Assets/Image/img0.png' alt=''>";
             document.getElementById('reponse').innerHTML = "Choisissez les 2 cartes à retourner.";
             verrouille = false;
         }, 1500);
