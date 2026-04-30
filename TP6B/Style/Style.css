@@ -1,0 +1,52 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.globale {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.bordure {
+    display: flex;
+}
+
+.affichage {
+    border: solid 1px rgb(245, 84, 223);
+    background-color: pink;
+    width: 8vw;
+    height: auto;
+}
+
+.affichage img {
+    opacity: 0;
+    width: 8vw;
+    height: auto;
+    visibility: hidden;
+}
+
+.affichage:hover {
+    background-color: rgb(255, 56, 139);
+    cursor: pointer;
+}
+
+.imgclique {
+    border: solid 1px rgb(245, 84, 223);
+    background-color: rgb(255, 255, 255);
+}
+
+.imgclique img {
+    width: 8vw;
+    height: auto;
+}
+
+#restart {
+    display: none;
+}
