@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TP10 - Formulaire en JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TP10 - Formulaire en JS</h1>
+    <h2>Cimentier Lafarge</h2>
+    <div id="formulaire">
+        <div id="contenu_formulaire">
+            <h3>Formulaire de demande de devis</h3>
+            <br>
+            Nom : <input type="text" name="nom" id="nom"><br><br>
+            Prenom : <input type="text" name="prenom" id="prenom"><br><br>
+            Adresse : <input type="text" name="adresse" id="adresse"><br><br>
+            Adresse e-mail : <input type="email" name="email" id="email"><br><br>
+            Numéro de téléphone : <input type="tel" name="telephone" id="tel"><br><br>
+            Superficie (en m²) : <input type="number" name="superficie" id="superficie" min="0"><br><br>
+            Epaisseur (en centimètre) : <input type="number" name="epaisseur" id="epaisseur" min="35" max="65"><br><br>
+            <input type="submit" name="soumettre" value="Confirmer votre devis" id="soumettre"><br><br>
+        </div>
+    </div>
+    <div id="devis">
+        <div id="contenu_devis">
+            <h3 id="num_devis">Devis n°</h3>
+            <br>
+            <div class="element_droite">
+                <p id="date" class="petit">Date du devis :</p>
+                <p class="petit">Validité du devis :1 mois</p>
+            </div>
+                <div class="petit_gauche">
+                    <p>Lafarge Valence</p>
+                    <p>Rue du Pommier inversé</p>
+                    <p>Valence, 26000</p>
+                    <p>06 66 66 66 67</p>
+                </div>
+                <div class="element_droite">
+                    <p id="attention">A l'attention de </p>
+                    <p id="adresse_client"></p>
+                    <p id="email_client"></p>
+                    <p id="tel_client"></p>
+                </div>
+            <table>
+                <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col">Prix</th>
+                    <th scope="col">Quantité</th>
+                    <th scope="col">Total</th>
+                </tr>
+                <tr>
+                    <th scope="row">Plaque de béton</th>
+                    <td>40€/m³</td>
+                    <td id="qte_beton"></td>
+                    <td id="prix_beton_ht"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Transport</th>
+                    <td>140€/camion</td>
+                    <td id="qte_camion"></td>
+                    <td id="prix_camion_ht"></td>
+                </tr>
+            </table>
+            <div id="affichage_total" class="element_droite">
+                <p id="soustotal">Sous total: </p>
+                <p id="tva">TVA (20%): </p>
+                <p id="total">Total: </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Base";
+    src: url("Karla-Medium.ttf");
+}
+
+body, html, input {
+    font-family: "Base";
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 33px;
+    line-height: 0.4;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+#formulaire {
+    padding: 0.5%;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 2%;
+    width: 27vw;
+    border-radius: 7px;
+}
+
+#contenu_formulaire {
+    display: block;
+}
+
+#soumettre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#devis {
+    display: none;
+    justify-content: right;
+    align-items: right;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 40vw;
+}
+
+.petit {
+    font-size: 74%;
+    line-height: 0.4;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#devis th, #devis td {
+    border: 1px solid black
+}
+
+.element_droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5%;
+    line-height: 0.2;
+}
+
+.petit_gauche {
+    margin-left: 3%;
+    font-size: 74%;
+    line-height: 0.4;
+}
