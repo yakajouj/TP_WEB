@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Base";
+    src: url("../Font/Karla-Medium.ttf");
+}
+
+body, html, input {
+    font-family: "Base";
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 33px;
+    line-height: 0.4;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+#formulaire {
+    padding: 0.5%;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 2%;
+    width: 27vw;
+    border-radius: 7px;
+}
+
+#contenu_formulaire {
+    display: block;
+}
+
+#soumettre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#changement_calendrier {
+    display: none;
+    justify-content: right;
+    align-items: right;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 40vw;
+}
+
+table {
+    display: none;
+}
+
+.tableP {
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.tableG {
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    font-size: 25px;
+}
+
+.affichage_calendrier {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th, td, tr{
+    border: 1px solid black;
+    width: 7vw;
+}
+
+td {
+    height: 2vh;
+    text-align: center;
+}
+
+.jourAffiche1 th {
+    background-color: rgb(252, 68, 68);
+}
+    
+
+.jourAffiche1 td {
+    background-color: rgb(254, 148, 95);
+}
+
+.jourAffiche2 th {
+    background-color: rgb(33, 162, 242);
+}
+
+.jourAffiche2 td {
+    background-color: rgb(165, 199, 251);
+}
+
+.jourAffiche3 th {
+    background-color: rgb(7, 133, 17);
+}
+
+.jourAffiche3 td {
+    background-color: rgb(119, 248, 117);
+}

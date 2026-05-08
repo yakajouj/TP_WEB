@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Style/style4.css">
     <title>Exercice 4</title>
 </head>
+
 <body>
-    
+    <h1>Exercice 4</h1>
+    <h2>Affichage de calendrier</h2>
+    <div id="formulaire">
+        <div id="contenu_formulaire">
+            <br>
+            Premier jour du mois : <input type="number" name="jour" id="jour" min="1" max="31"><br><br>
+            Mois : <input type="number" name="mois" id="mois" min="1" max="12"><br><br>
+            Année : <input type="text" name="annee" id="annee" min="0"><br><br>
+            <input type="submit" name="soumettre" value="Confirmer la saisie" id="soumettre"><br><br>
+        </div>
+    </div>
+    <div id="changement_calendrier">
+        <p>Couleur du calendrier :</p>
+        <div id="couleur">
+            <input type="radio" id="rouge" name="couleur" checked>Rouge
+            <input type="radio" id="vert" name="couleur">Vert
+            <input type="radio" id="bleu" name="couleur">Bleu
+            
+        </div>
+        <div id="taille">
+            <p>Taille du calendrier:</p>
+            <input type="radio" id="petit" name="taille" checked>Petit
+            <input type="radio" id="grand" name="taille">Grand
+        </div>
+    </div>
+    <br><br><br>
+    <div class="affichage_calendrier">
+        <table id="calendrier" class="jourAffiche1 tableP">
+            <tr>
+                <th scope="col">Lundi</th>
+                <th scope="col">Mardi</th>
+                <th scope="col">Mercredi</th>
+                <th scope="col">Jeudi</th>
+                <th scope="col">Vendredi</th>
+                <th scope="col">Samedi</th>
+                <th scope="col">Dimanche</th>
+            </tr>
+            <tr id="semaine1">
+
+            </tr>
+            <tr id="semaine2">
+
+            </tr>
+            <tr id="semaine3">
+
+            </tr>
+            <tr id="semaine4">
+
+            </tr>
+            <tr id="semaine5">
+            </tr>
+        </table>
+    </div>
 </body>
+<script src="../Script/script4.js"></script>
+
 </html>

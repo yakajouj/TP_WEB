@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style2.css">
+    <title>Exercice 2</title>
+</head>
+
+<body>
+    <h1>Exercice 1</h1>
+    <h2>Formulaire de visite de la journéee Porte Ouverte de Algoud-Laffemas</h2>
+    <div id="formulaire">
+        <div id="contenu_formulaire">
+            <p>Prénom : </p><input type="text" name="prenom" id="prenom"> <br>
+            <p>Nom : </p><input type="text" name="nom" id="nom"> <br>
+            <p>Étude suivie : </p><input list="etude_suivi" id="etude" name="etude" />
+            <datalist id="etude_suivi">
+                <option value="Bac pro"></option>
+                <option value="STMG"></option>
+                <option value="STI"></option>
+                <option value="Générale"></option>
+            </datalist> <br>
+            <input type="submit" name="soumettre" value="Confirmer la saisie" id="soumettre"> <br> <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="tableau">
+        <table id="table">
+            <tr>
+                <th scope="col">Prénom</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Étude suivie</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="../Script/script2.js"></script>
+
+</html>
